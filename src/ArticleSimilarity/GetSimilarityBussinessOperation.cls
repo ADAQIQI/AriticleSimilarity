@@ -126,7 +126,7 @@ ClassMethod GetSenSimiEmbeddings(Title1, Title2)
 			 set sentencet.sentence=rsetAriticle1.%Get("sentence")
 			 set sentencet.simsentence=rset1.%Get("sentence")
 			 set sentencet.sim=rset1.%Get("sim")
-			 if (sentencet.sim>0.9){
+			 if (sentencet.sim>0.7){
 			     Do tempob.sententces.%Push(sentencet)
 			 }
 			  Do obsimparam.%Set("Param"_rset1.%Get("ParagraphNumber"),tempob) 
