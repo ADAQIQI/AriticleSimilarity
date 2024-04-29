@@ -26,8 +26,13 @@
 
     1.3 若使用其他模型需要修改dockerfile文件及类
 
+   
+   ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/dc7fe43b-3f9a-4c14-afb8-716f752be7e1)
 
-     ![1689d7a62eb16f048122f3c77a60264](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/459877f6-6a79-4730-9a62-1ea36cb884ed)
+
+
+
+     
 
 
 
