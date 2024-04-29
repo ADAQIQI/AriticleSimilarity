@@ -1,0 +1,7 @@
+  
+     do $system.OBJ.ImportDir("/opt/AriticleSimilarity/src/ArticleSimilarity/",,"cbrpsuy",,1)
+     Set tSC = $ClassMethod("EnsPortal.AutoStartProduction","ApplyID","ArticleSimilarity.Production",0)
+     zn "%SYS"
+     Do ##class(Security.Users).UnExpireUserPasswords("*")
+     
+     halt
