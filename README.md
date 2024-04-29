@@ -31,7 +31,7 @@
 ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/64c6f592-f9fd-4c30-bfab-6e8e3da4b15b)
 
 
-  If the model used is not BERT, it is necessary to modify Article Similarity The GetEmbeddingPy method of the Vector class changes the folder name to the corresponding folder
+  If the model used is not BERT, it is necessary to Modify Article Similarity Vector's GetEmbeddingPy Change the directory to the folder used in 1.2
        
  ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/b3e84558-6e9e-48ea-aab0-9e5c30ecbabd)
 
