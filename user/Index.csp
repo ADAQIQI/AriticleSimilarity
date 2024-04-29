@@ -1,0 +1,559 @@
+<html>
+
+<head>
+
+     <style>
+     .span0{ color:#80b3c4;}
+     .span1{ color:red;}
+     .span2{ color:yellow;}
+     .span3{ color:blue;}
+     .span4{ color:green;}
+     .span5{ color:pink;}
+     .span6{ color:#ECE2EB;}
+     .span7{ color:#246B69;}
+     .span8{ color:#F0A0A8;}
+     .span9{ color:#B1A9B9;}
+     </style>
+    <!-- Put your page Title here -->
+    <title> Cache Server Page </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">Article similarity test</span>
+        </a>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Upload articles</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Paragraph similarity</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Sentence similarity </button>
+            </li>
+          
+        </ul>
+
+    </header>
+
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Aritle 1
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-bs-target="#accordionExample">
+                        <div class="card-body">
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="inputGroupFile02">
+                                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Title</span>
+                                <input id="Title1" type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <div><label for="article1">Aritle Content</label>
+                                <textarea class="form-control" id="article1" rows="10"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Aritle 2
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="ArticleInput2">
+                                <label class="input-group-text" for="ArticleInput2">Upload</label>
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text">Title</span>
+                                <input id="Title2" type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <div><label for="article2">Aritle Content</label>
+                                <textarea class="form-control" id="article2" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+
+                    <button class="btn btn-primary" type="submit" id="uploadAriticle">Upload</button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="tab-pane fade " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <div style="display:flex;width:100%;margin-bottom:10px">
+                    
+                       <div class="input-group mb-3">
+   <span class="input-group-text" id="basic-addon1">Atitle1</span>
+   <select id="selectTitle1" class="form-select form-select-sm" aria-label=".form-select-sm example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+   <span class="input-group-text" id="basic-addon1">Atitle2</span>
+   <select id="selectTitle2" class="form-select form-select-sm" aria-label=".form-select-sm example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<button class="btn btn-outline-secondary" type="button" id="getsimilarity">Button</button>
+</div>
+ 
+
+                    </div>
+            <div class="card">
+            
+                <div class="card-body" id="simresult" style="">
+                    
+                    <div style="display:flex">
+                        <div class="card" style="width:100%">
+                             
+                        </div>
+
+                      
+                    </div>
+                    <div style="display:flex">
+                        <div class="card" style="width:100%">
+                            
+                        </div>
+
+                      
+                    </div>
+                    
+                </div>
+            </div>
+            ...
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        
+         <div style="display:flex;width:100%;margin-bottom:10px">
+                    
+                       <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">Atitle1</span>
+   <select id="selectTitle21" class="form-select form-select-sm" aria-label=".form-select-sm example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+  <span class="input-group-text" id="basic-addon1">Atitle2</span>
+   <select id="selectTitle22" class="form-select form-select-sm" aria-label=".form-select-sm example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<button class="btn btn-outline-secondary" type="button" id="getsimilarity2">Button</button>
+</div>
+        
+    </div>    
+        
+        
+        <div class="card">
+            
+                <div class="card-body" id="sensimresult" style="">
+                    
+                    <div style="display:flex">
+                        <div class="card" style="width:100%">
+                             
+
+                            <div class="card-body" style="display:flex">
+                            
+                            
+                                
+
+                            </div>
+                        </div>
+
+                      
+                    </div>
+                    <div style="display:flex">
+                        <div class="card" style="width:100%">
+                            
+                        </div>
+
+                      
+                    </div>
+                    
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            ...</div>
+        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+            tabindex="0">...</div>
+    </div>
+</div>
+
+    <script>
+    $("#uploadAriticle").click(function(){
+	        var content1=$("#article1").val()
+	        var content2=$("#article2").val()
+	        var title1=$("#Title1").val()
+	        var title2=$("#Title2").val()
+	        
+	        ////???loading
+	        $("#uploadAriticle").html('<span class="spinner-border spinner-border-sm"></span> Loading..')
+	        $("#uploadAriticle").attr("disabled","disabled")
+	        
+	        setTimeout(function(){
+    //1??????
+    var htmlstr = #server(..UoloadAriticle(title1,title2,content1,content2))#;
+    
+  
+    
+    
+    //console.log(htmlstr)
+    $("#simresult").html(htmlstr)
+    $("#uploadAriticle").html('upload')
+            $("#uploadAriticle").removeAttr('disabled');
+       $("#pills-profile-tab").addClass("active");
+    $("#pills-profile").addClass("active");
+     $("#pills-profile").addClass("show");       
+    $("#pills-home-tab").removeClass("active");
+    $("#pills-home").removeClass("active");
+    $("#pills-home").removeClass("show");
+            ////???????????
+}, 1000); 
+	        
+            
+            //console.log("------------")
+           // $("#uploadAriticle").html('upload')
+            //$("#uploadAriticle").removeAttr('disabled');
+            ///??loading
+            
+     });
+
+  $("#getsimilarity").click(function(){
+	  console.log("????")
+	  console.log($("#selectTitle1").val())
+	  var htmlstr = #server(..getSimilarityBymethod( $("#selectTitle1").val(), $("#selectTitle2").val(),"getParamSimilarity"))#;
+	  $("#simresult").html(htmlstr)
+	  
+	  
+	
+	  
+	})
+	 $("#getsimilarity2").click(function(){
+	  console.log("????2")
+	  console.log($("#selectTitle1").val())
+	  var htmlstr = #server(..getSimilarityBymethod( $("#selectTitle21").val(), $("#selectTitle22").val(),"getSenSimilarity"))#;
+	  $("#sensimresult").html(htmlstr)
+	  console.log("hhh"+htmlstr)
+	  
+	  
+	
+	  
+	})
+	
+        $("#inputGroupFile02").change(function () {
+	        
+	        $("#Title1").val($("#inputGroupFile02")[0].files[0].name)
+	        
+            if (this.files.length) {
+                let file = this.files[0];
+                let reader = new FileReader();
+                reader.onload = function () {
+                    console.log(this.result);
+                    $("#article1").val(this.result)
+                };
+                reader.readAsText(file);
+            }
+
+
+        });
+ $("#ArticleInput2").change(function () {
+	        $("#Title2").val($("#ArticleInput2")[0].files[0].name)
+            if (this.files.length) {
+                let file = this.files[0];
+                let reader = new FileReader();
+                reader.onload = function () {
+                    console.log(this.result);
+                    $("#article2").val(this.result)
+                };
+                reader.readAsText(file);
+            }
+             //var bool = #server(..GetFileList("xxx"))#;
+
+        });
+   function getTitle()
+   {
+	    var htmlstr = #server(..GetAritleTitle())#;
+	    console.log(htmlstr)
+	     $("#selectTitle1").html(htmlstr)
+	      $("#selectTitle2").html(htmlstr)
+	      $("#selectTitle21").html(htmlstr)
+	      $("#selectTitle22").html(htmlstr)
+	    
+	}
+	getTitle();
+    </script>
+    <script language=Cache runat=server>
+	set ^test="-------------"
+</script>
+<script language=Cache method=GetAritleTitle arguments="" returntype=%String>
+    set Query="select Title from ArticleSimilarity.Vector group by Title"
+    Set statement= ##class(%SQL.Statement).%New()
+	Set qStatus = statement.%Prepare(Query)
+	Set rset = statement.%Execute()
+	set html=""
+	while rset.%Next(){
+		
+		set html=html_"  <option value='"_rset.%Get("Title")_"' >"_rset.%Get("Title")_"</option>"
+	}
+    return html
+</script>
+<script language=Cache method=UoloadAriticle arguments="AriticleName1:%String,AriticleName2:%String,AriticleContent1:%String,AriticleContent2:%String" returntype=%String>
+       Set BS =##class(ArticleSimilarity.GetArticleBussinessService).%New("ArticleSimilarity.GetArticleBussinessService")
+       Set tSC=##class(Ens.Director).CreateBusinessService("ArticleSimilarity.GetArticleBussinessService",.BS)
+       Set request =##class(ArticleSimilarity.MSG.Request).%New()
+       Set request.Method="uplaodAriticle"
+       Set request.Title1Name=AriticleName1
+       Set request.Title2Name=AriticleName2
+       Set request.Title1Content=AriticleContent1
+       Set request.Title2Content=AriticleContent2
+       //set request.StringValue="application"
+       set output =##class(Ens.StringResponse).%New()
+       Set tSC1=BS.ProcessInput(request,.output)
+       //set ^Test=output
+       
+       
+        set result=[].%FromJSON(output.StringValue)
+       set htmlstr="<div style=""display:flex;width:50%""> <p>x</p> </div>"
+       for i=0:1:result.%Size()-1
+       {
+	       set htmlstr=htmlstr_" <div style=""display:flex"">"
+           set htmlstr=htmlstr_"           <div class=""card"" style=""width:100%"">"
+           set htmlstr=htmlstr_"                   <h6 class="""" style=""margin-top:16px""align=""center"">Similarity:"_result.%Get(i).sim_"</h5>"
+
+           set htmlstr=htmlstr_"                 <div class=""card-body"" style=""display:flex"">"
+                            
+            set htmlstr=htmlstr_"                 <div style=""width:50%;padding-right: 16px; border-right: 1px dashed #666;"">"
+
+            set htmlstr=htmlstr_"                    <h5 class=""card-title"">Param "_result.%Get(i).ParamNum_"</h5>"
+
+             set htmlstr=htmlstr_"                   <p class=""card-text"">"_result.%Get(i).content_"</p>"
+             set htmlstr=htmlstr_"                  </div>"
+             set htmlstr=htmlstr_"                    <div style=""width:50%;margin-left:16px "">"
+
+              set htmlstr=htmlstr_"                  <h5 class=""card-title"">Param "_result.%Get(i).simParamNum_"</h5>"
+
+               set htmlstr=htmlstr_"                 <p class=""card-text"">"_result.%Get(i).simParam_"</p>"
+                set htmlstr=htmlstr_"               </div>"
+             
+                   set htmlstr=htmlstr_"         </div>"
+                   set htmlstr=htmlstr_"     </div>"
+
+                      
+                  set htmlstr=htmlstr_"  </div>"
+	   }
+       
+       Quit htmlstr
+</script>
+
+
+<script language=Cache method=getSimilarityBymethod arguments="AriticleName1:%String,AriticleName2:%String,Method:%String" returntype=%String>
+       
+       Set request =##class(ArticleSimilarity.MSG.Request).%New()
+       Set request.Method=Method
+       Set request.Title1Name=AriticleName1
+       Set request.Title2Name=AriticleName2
+       Set request.Title1Content=""
+       Set request.Title2Content=""
+       Quit ..Similarity(request)
+</script>
+
+<script language=Cache method=Similarity arguments="request:ArticleSimilarity.MSG.Request" returntype=%String>
+
+
+
+
+Set BS =##class(ArticleSimilarity.GetArticleBussinessService).%New("ArticleSimilarity.GetArticleBussinessService")
+       Set tSC=##class(Ens.Director).CreateBusinessService("ArticleSimilarity.GetArticleBussinessService",.BS)
+       //set request.StringValue="application"
+       set output =##class(Ens.StringResponse).%New()
+       Set tSC1=BS.ProcessInput(request,.output)
+       //set ^Test=output
+       
+       
+        set result=[].%FromJSON(output.StringValue)
+        if (request.Method="getParamSimilarity")||(request.Method="uplaodAriticle"){
+	  
+	
+       set htmlstr="<div style=""display:flex;width:50%""> <p>x</p> </div>"
+       for i=0:1:result.%Size()-1
+       {
+	       set htmlstr=htmlstr_" <div style=""display:flex"">"
+           set htmlstr=htmlstr_"           <div class=""card"" style=""width:100%"">"
+           set htmlstr=htmlstr_"                   <h6 class="""" style=""margin-top:16px""align=""center"">Similarity:"_result.%Get(i).sim_"</h5>"
+
+           set htmlstr=htmlstr_"                 <div class=""card-body"" style=""display:flex"">"
+                            
+            set htmlstr=htmlstr_"                 <div style=""width:50%;padding-right: 16px; border-right: 1px dashed #666;"">"
+
+            set htmlstr=htmlstr_"                    <h5 class=""card-title"">Param "_result.%Get(i).ParamNum_"</h5>"
+
+             set htmlstr=htmlstr_"                   <p class=""card-text"">"_result.%Get(i).content_"</p>"
+             set htmlstr=htmlstr_"                  </div>"
+             set htmlstr=htmlstr_"                    <div style=""width:50%;margin-left:16px "">"
+
+              set htmlstr=htmlstr_"                  <h5 class=""card-title"">Param "_result.%Get(i).simParamNum_"</h5>"
+
+               set htmlstr=htmlstr_"                 <p class=""card-text"">"_result.%Get(i).simParam_"</p>"
+                set htmlstr=htmlstr_"               </div>"
+             
+                   set htmlstr=htmlstr_"         </div>"
+                   set htmlstr=htmlstr_"     </div>"
+
+                      
+                  set htmlstr=htmlstr_"  </div>"
+	   }
+       }else{
+	       
+	        set htmlstr=""
+	       
+	       
+	       
+	       
+	       /*
+	       
+	       <div style="display:flex">
+                        <div class="card" style="width:100%">  <h6 class="" style="margin-top:16px"align="center">Similarity:89%</h5>
+
+                            <div class="card-body" style="display:flex">
+                            
+                             <div style="width:50%;padding-right: 16px; border-right: 1px dashed #666;">
+
+                                <h5 class="card-title">Param 1</h5>
+
+                               
+                               
+                               </div>
+                                 <div style="width:50%;margin-left:16px ">
+
+                                <h5 class="card-title">Param 1</h5>
+
+                                <p class="card-text">Some  <span style="color:blue;font-weight:bold">quick</span> example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                               </div>
+
+                            </div>
+                        </div>
+
+                      
+                    </div>
+	       
+	       */
+	      
+	       set itor=result.%GetIterator()
+	       while itor.%GetNext(.key,.value)
+	       {
+		        set j=0
+		       set content=value.content
+		       set htmlstr2="<div style='width:50%;margin-left:16px '>"
+		        set htmlstr=htmlstr_"<div style=""display:flex"">"_
+                        "<div class=""card"" style=""width:100%"">"_
+                        "  <div class='card-body' style='display:flex'>"_
+                        "<div style='width:50%;margin-left:16px;padding-right: 16px;border-right: 1px dashed #666 '>"_
+
+                                "<h5 class='card-title'>Param "_value.ParamNum_"</h5>"
+                                
+                 set simParam=  value.simParam
+                 set itor2=   simParam.%GetIterator()  
+                 while itor2.%GetNext(.key2,.value2)
+                 {   
+	                  set content2=value2.simcontent
+	                  set sententces=value2.sententces
+	                 for i=0:1:sententces.%Size()-1
+	                 {
+		                 
+		                 set content2=$replace(content2,sententces.%Get(i).simsentence,"<a class='span"_j_"' data-toggle='tooltip' title='sim:"_sententces.%Get(i).sim_"'>"_sententces.%Get(i).simsentence_"</a>")
+		                 set content=$replace(content,sententces.%Get(i).sentence,"<a class='span"_j_"' data-toggle='tooltip' title='sim:"_sententces.%Get(i).sim_"'>"_sententces.%Get(i).sentence_"</a>")
+		                  set j=j+1
+		              }
+		              if (sententces.%Size()'=0){
+			             
+			               set htmlstr2=htmlstr2_" <h5 class='card-title'>Param "_value2.simParamNum_"</h5>"
+	                      set htmlstr2=htmlstr2_"<p class='card-text'>"_content2_"</p>"
+		              }
+	              }
+                    set htmlstr2=htmlstr2_ "</div>"           
+             set htmlstr=htmlstr_"<p class='card-text'>"_content_"</p>"_
+              "</div>"_htmlstr2_
+
+                           " </div>"_
+                       " </div>"_
+
+                      
+                   " </div>"
+
+		       
+		   }
+	       
+	       
+	       
+	       
+	    }
+       Quit htmlstr
+       
+</script>
+
+
+
+
+
+
+
+</body>
+
+</html>
