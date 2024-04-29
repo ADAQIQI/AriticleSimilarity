@@ -1,4 +1,3 @@
-![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/dabd804d-654d-47c8-a002-1605fee23f67)
 
 # AriticleSimilarity
 
@@ -14,25 +13,33 @@
      
    1.2 下载模型放到指定目录，可以在https://huggingface.co/上下载  以bert模型为例，下载后放到同一目录下
 
-     ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/76aabbed-d421-4f8a-bd3b-9a5db0e882ab)
+   ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/e5d54c71-52d5-45eb-a416-e73b6f5d5df8)
 
-     ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/04365f2c-72d8-46f1-a2aa-e742442a20ba)
-     
-     ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/bcc8e592-93cd-4714-8f72-9f64c0afea63)
+   ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/e8e4cf34-99ec-44cf-b7cf-873df537f234)
+
+
+
+    
+
+
 
 
     1.3 若使用其他模型需要修改dockerfile文件及类
 
-       ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/8943266e-883f-41eb-a49b-3639b2f7496f)
+       ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/e3fbbff4-595e-4eec-be49-52bd4cac4559)
+
 
        修改为你所下模型文件夹名。
     
    1.4 docker-compose up -d启动
-       ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/74395fa1-2d0e-4d91-8e85-4c9de8e31634)
+
+       ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/9b23ca10-7cb0-4e08-8970-cf18681093b6)
+
 
        如果所用模型并非bert，需要修改ArticleSimilarity.Vector类的GetEmbeddingPy方法，将文件夹名改为相应文件夹
        
-       ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/407f262d-f26a-449b-bcb2-2654f401608f)
+       ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/b3e84558-6e9e-48ea-aab0-9e5c30ecbabd)
+
 
 
    ## 2.IPM
