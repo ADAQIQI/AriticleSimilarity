@@ -16,7 +16,7 @@ USER root
 
 USER ${ISC_PACKAGE_MGRUSER}
 
-#RUN python3 -m pip install --target /usr/irissys/mgr/python sentence-transformers -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
+RUN python3 -m pip install --target /usr/irissys/mgr/python sentence-transformers 
 
 RUN iris start IRIS \
     && iris session IRIS < iris.script \
