@@ -26,7 +26,10 @@
 
     1.3 若使用其他模型需要修改dockerfile文件及类
 
-       ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/e3fbbff4-595e-4eec-be49-52bd4cac4559)
+
+     ![1689d7a62eb16f048122f3c77a60264](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/459877f6-6a79-4730-9a62-1ea36cb884ed)
+
+
 
 
        修改为你所下模型文件夹名。
