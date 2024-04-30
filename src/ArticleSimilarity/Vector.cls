@@ -97,7 +97,15 @@ ClassMethod InsertEmbeddings(stream As %FileBinaryStream)
    
    Quit $$$OK
 }
-
+ClassMethod Setting() As %Status
+{
+	zn "%sys"
+	Set Application=##Class(Security.Applications).%OpenId("/csp/user")
+	set Application.ServeFiles=2
+	Set tsc= Application.%Save()
+	zn "user"
+	Quit tsc
+}
 Storage Default
 {
 <Data name="VectorDefaultData">
