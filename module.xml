@@ -6,6 +6,9 @@
       <Version>1.0.0</Version>
       <Packaging>module</Packaging>
       <Resource Name="ArticleSimilarity.PKG"/>
+       <Invokes>
+          <Invoke Class="ArticleSimilarity.Vector" Method="Setting" Phase="Activate" When="After"/>
+      </Invokes>
       <CSPApplication CookiePath="/csp/user/" DefaultTimeout="900" DeployPath="${cspdir}user/" Description="User Namespace applications" GroupById="%ISCMgtPortal" MatchRoles=":{$dbrole}" PasswordAuthEnabled="1" Recurse="1" ServeFiles="2" ServeFilesTimeout="3600" SourcePath="/user" UnauthenticatedEnabled="1" Url="/csp/user" UseSessionCookie="2"/>
       <SourcesRoot>src</SourcesRoot>
     </Module>
