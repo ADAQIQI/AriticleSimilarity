@@ -18,7 +18,7 @@
 
    ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/e8e4cf34-99ec-44cf-b7cf-873df537f234)
 
-    1.3 If using other models, it is necessary to modify the dockerfile file
+   1.3 If using other models, it is necessary to modify the dockerfile file
 
    
    ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/dc7fe43b-3f9a-4c14-afb8-716f752be7e1)
@@ -59,7 +59,7 @@
  ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/6f33434e-583f-443f-a022-668b3732e48a)
 
     
-    After clicking upload, wait for a period of time for the page to jump to paragraph similarity comparison. At the same time, the background will continue to split the article into sentences and compare them sentence by sentence
+    After clicking upload, wait for a period of time for the page to jump to paragraph similarity comparison(If the page reports an error due to a long return time, please wait for a while before refreshing the page and directly switch to the similarity comparison tab for similarity comparison). At the same time, the background will continue to split the article into sentences and compare them sentence by sentence
     
 
  ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/e9dfcddf-e4fd-4df0-b663-0ede4e6a493c)
