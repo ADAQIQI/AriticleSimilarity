@@ -11,7 +11,7 @@
    
      $ git clone https://github.com/ADAQIQI/AriticleSimilarity.git
      
-   1.2 Download the model and place it in the specified directory, which can be found in the https://huggingface.co/ Taking the BERT model as an example, download it and place it in the same directory
+   1.2 Download the model and place it in the specified directory, which can be found in the https://huggingface.co/ Taking the BERT model as an example（If the CPU and memory configuration are not sufficient, other models such as MiniLM can be considered）, download it and place it in the same directory
    
 
    ![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/e5d54c71-52d5-45eb-a416-e73b6f5d5df8)
