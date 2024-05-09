@@ -28,7 +28,6 @@
    1.4 docker-compose up -d
 
      
-![image](https://github.com/ADAQIQI/AriticleSimilarity/assets/168393168/64c6f592-f9fd-4c30-bfab-6e8e3da4b15b)
 
 
   If the model used is not BERT, it is necessary to Modify Article Similarity Vector's GetEmbeddingPy Change the directory to the folder used in 1.2
